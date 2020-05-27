@@ -5,45 +5,45 @@ namespace Lab6_
 {
     public class Tests
     {
-        //Сумма
+        //ЕѓГіД›Д›Е•
         [Test, TestCaseSource("DivideCases")]
-        public void Test1(double i, double j)
+        public void Test1(double x, double y)
         {
             Calculator.Methods summ = new Calculator.Methods();
-            double S = summ.addition(i, j);
-            double a = i + j;
-            Assert.IsTrue(a == S, "При i = {0} и j = {1}, получили S = {2}", i, j, S);
+            double S = summ.addition(x, y);
+            double a = x + y;
+            Assert.IsTrue(a == S, "ДЋД‘ДЌ x = {0} ДЌ y = {1}, ДЏГ®Г«ГіГ·ДЌГ«ДЌ S = {2}", x, y, S);
         }
 
-        //Разность
+        //ДђЕ•Г§Г­Г®Е„Е€Гј
         [Test, TestCaseSource("DivideCases")]
-        public void Test2(double i, double j)
+        public void Test2(double x, double y)
         {
             Calculator.Methods raz = new Calculator.Methods();
 
-            double R = raz.difference(i, j);
-            double b = i - j;
-            Assert.IsTrue(b == R, "При i = {0} и j = {1}, получили R = {2}", i, j, R);
+            double R = raz.difference(x, y);
+            double b = x - y;
+            Assert.IsTrue(b == R, "ДЋД‘ДЌ x = {0} ДЌ y = {1}, ДЏГ®Г«ГіГ·ДЌГ«ДЌ R = {2}", x, y, R);
         }
 
-        //Произведение
+        //ДЋД‘Г®ДЌГ§ГўДєГ¤ДєГ­ДЌДє
         [Test, TestCaseSource("DivideCases")]
-        public void Test3(double i, double j)
+        public void Test3(double x, double y)
         {
             Calculator.Methods Pr = new Calculator.Methods();
-            double P = Pr.multiplication(i, j);
-            double c = i * j;
-            Assert.IsTrue(c == P, "При i = {0} и j = {1}, получили P = {2}", i, j, P);
+            double P = Pr.multiplication(x, y);
+            double c = x * y;
+            Assert.IsTrue(c == P, "ДЋД‘ДЌ x = {0} ДЌ y = {1}, ДЏГ®Г«ГіГ·ДЌГ«ДЌ P = {2}", x, y, P);
         }
 
-        //Деление
+        //Г„ДєГ«ДєГ­ДЌДє
         [Test, TestCaseSource("DivideCases")]
-        public void Test4(double i, double j)
+        public void Test4(double x, double y)
         { 
             Calculator.Methods del = new Calculator.Methods();
-            double D = del.division(i, j);
-            double d = i / j;
-            Assert.IsTrue(d == D, "При i = {0} и j = {1}, получили D = {2}", i, j, D);
+            double D = del.division(x, y);
+            double d = x / y;
+            Assert.IsTrue(d == D, "ДЋД‘ДЌ x = {0} ДЌ y = {1}, ДЏГ®Г«ГіГ·ДЌГ«ДЌ D = {2}", x, y, D);
         }
 
         static object[] DivideCases =
